@@ -10,8 +10,23 @@ In this project I will find out the following result from Facebook data.
   * How many likes do young people recieve on facebook opposed to older people? 
   * Find out the count of facebook users for each birthday month.
   * Do young members use mobile phones or computer for facebook browsing?
-  * Do adult members use mobile phones or computers for fb browsing?
+  * Do adult members use mobile phones or computers for facebook browsing?
 
 ## Data Set Description ##
 
-
+  Column 1  :   userid	
+  Column 2  :   age				
+  Column 3  :   dob_day
+  Column 4  :   dob_year	
+  Column 5  :   dob_month
+  Column 6  :   gender
+  Column 7  :   tenure
+  Column 8  :	  friend_count
+  Column 9  :	  friendships_initiated
+  Column 10 : 	likes
+  Column 11 :	  likes_received
+  Column 12 :	  mobile_likes	
+  Column 13 : 	mobile_likes_received
+  Column 14 :	  www_likes	
+  Column 15 :   www_likes_received
+  
