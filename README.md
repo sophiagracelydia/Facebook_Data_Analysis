@@ -44,7 +44,7 @@ In this project I will find out the following result from Facebook data.
   
   Column 15 :   www_likes_received
   
-The facebook data set have been given in this repository in facebook_data file. Store the data in HDFS.
+The facebook data set have been given in this repository in fb_data file. Store the data in HDFS.
 
 ### Create a table in Hive ###
 ```terminal
@@ -54,16 +54,34 @@ row format delimited \\
 fields terminated by ',';
 
 ```
+### To load the fb_data csv file into Hive
+```
+load data local inpath '/home/hduser/fb_data.txt' into table facebook_data;
+```
 
-1. Run the following command to find out the total number of users in this dataset.
+Run and execute the following hive commands for the following problem statements.
+
+### 1. Find out the total number of users in this dataset.
 
 ```hive
 select count(*) from facebook_data;
 ```
-2. Run the following command to find out the number of facebook users above the age of 25.
+### 2. Find out the number of facebook users above the age of 25.
+
 ```hive
 select count(*) from facebook_data where age>25;
 ```
-And the execute the following hive commands.
+### 3. Do male or female facebook users tend to have more friends? 
 
+```
+select gender,avg(friends) from facebook_data group by gender;
+```
+### 4. How many likes do young people recieve on facebook opposed to older people.
+
+
+### 5. Find out the count of facebook users for each birthday month.
+
+### 6. Do young members use mobile phones or computer for fb browsing?
+
+### 7. Do adult members use mobile phones or computer for fb browsing?
 
