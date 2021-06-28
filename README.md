@@ -94,5 +94,5 @@ select avg(mlikes),avg(wlikes) from facebook_data where age>=13 AND age<=25;
 select avg(mlikes),avg(wlikes) from facebook_data where age>=35;
 ```
 
-#### After executing above hive commands file your result be saved. Make sure your hadoop cluster is running before executing the pig script file. ####
+#### Make sure your hadoop cluster is running before executing the hive file. ####
 
