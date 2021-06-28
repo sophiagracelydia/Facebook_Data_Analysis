@@ -77,11 +77,22 @@ select count(*) from facebook_data where age>25;
 select gender,avg(friends) from facebook_data group by gender;
 ```
 ### 4. How many likes do young people recieve on facebook opposed to older people.
-
-
+```
+select avg(likes_recd) from facebook_data where age>=13 AND age<=25; 
+select avg(likes_recd) from facebook_data where age>25;
+```
 ### 5. Find out the count of facebook users for each birthday month.
-
+```
+select month,count(*) from facebook_data group by month;
+```
 ### 6. Do young members use mobile phones or computer for fb browsing?
-
+```
+select avg(mlikes),avg(wlikes) from facebook_data where age>=13 AND age<=25;
+```
 ### 7. Do adult members use mobile phones or computer for fb browsing?
+```
+select avg(mlikes),avg(wlikes) from facebook_data where age>=35;
+```
+
+#### After executing above hive commands file your result be saved. Make sure your hadoop cluster is running before executing the pig script file. ####
 
