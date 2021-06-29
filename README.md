@@ -66,6 +66,8 @@ Run and execute the following hive commands for the following problem statements
 ```hive
 select count(*) from facebook_data;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123734781-9b3ecc00-d8bb-11eb-833b-ef60fc9dfc21.png)
+
 ### 2. Find out the number of facebook users above the age of 25.
 
 ```hive
