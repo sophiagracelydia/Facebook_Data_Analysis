@@ -73,28 +73,39 @@ select count(*) from facebook_data;
 ```hive
 select count(*) from facebook_data where age>25;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123734933-e5c04880-d8bb-11eb-826a-24ac425d9dfd.png)
+
 ### 3. Do male or female facebook users tend to have more friends? 
 
 ```
 select gender,avg(friends) from facebook_data group by gender;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123735023-0dafac00-d8bc-11eb-8250-c6460beba242.png)
+
 ### 4. How many likes do young people recieve on facebook opposed to older people.
 ```
 select avg(likes_recd) from facebook_data where age>=13 AND age<=25; 
+```
+
+```
 select avg(likes_recd) from facebook_data where age>25;
 ```
 ### 5. Find out the count of facebook users for each birthday month.
 ```
 select month,count(*) from facebook_data group by month;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123735197-667f4480-d8bc-11eb-9566-b6900ffa682b.png)
+
 ### 6. Do young members use mobile phones or computer for fb browsing?
 ```
 select avg(mlikes),avg(wlikes) from facebook_data where age>=13 AND age<=25;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123735407-c83fae80-d8bc-11eb-874a-32c7f3cc7b87.png)
+
 ### 7. Do adult members use mobile phones or computer for fb browsing?
 ```
 select avg(mlikes),avg(wlikes) from facebook_data where age>=35;
 ```
+![image](https://user-images.githubusercontent.com/52828894/123735465-e4435000-d8bc-11eb-8a37-f438a6eb4ead.png)
 
 #### Make sure your hadoop cluster is running before executing the hive file. ####
-
