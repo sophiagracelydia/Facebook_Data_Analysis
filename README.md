@@ -11,7 +11,6 @@ In this project I will find out the following result from Facebook data.
   * Find out the count of facebook users for each birthday month.
   * Do young members use mobile phones or computer for facebook browsing?
   * Do adult members use mobile phones or computers for facebook browsing?
-
 ## Data Set Description ##
 
   Column 1  :   userid	
