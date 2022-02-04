@@ -1,7 +1,6 @@
-# Facebook Data Analysis Using Hadoop and Hive #
+# Facebook Data Analysis Using Hadoop and Hive 
 
 There have been many procedure and equally many types of analysis methods applied to arrive at conclusions. This project is all about analyzing the facebook dataset with hadoop and Hive:
-
 In this project I will find out the following result from Facebook data.
   
   * Find out the total number of users in this dataset.
@@ -11,6 +10,7 @@ In this project I will find out the following result from Facebook data.
   * Find out the count of facebook users for each birthday month.
   * Do young members use mobile phones or computer for facebook browsing?
   * Do adult members use mobile phones or computers for facebook browsing?
+  
 ## Data Set Description ##
 
   Column 1  :   userid	
