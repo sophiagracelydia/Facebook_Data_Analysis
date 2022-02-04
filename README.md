@@ -106,4 +106,4 @@ select avg(mlikes),avg(wlikes) from facebook_data where age>=35;
 ```
 ![image](https://user-images.githubusercontent.com/52828894/123735465-e4435000-d8bc-11eb-8a37-f438a6eb4ead.png)
 
-#### Make sure your hadoop cluster is running before executing the hive file. ####
+#### Make sure your hadoop cluster is running before executing the hive file. 
